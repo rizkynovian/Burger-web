@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+        <div class="logo">
+            <h2>Burger Web</h2>
+            <!-- <img src="assets/logo.png" alt=""> -->
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#burger">Burgers</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#about">About Me</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    </header>
+    
+    <!-- Akhir Header -->
+
+
+    <!-- Main -->
+    <main>
+        <article id="home">
+            <div class="content">
+                <div class="content-desc">
+                    <h3 class="title">Burger</h3>
+                    <p>
+                        Hamburger atau burger adalah sejenis roti berbentuk bundar yang 
+                        diiris dua, dan di tengahnya diisi dengan patty yang biasanya diambil 
+                        dari daging, kemudian sayur-sayuran berupa selada, tomat dan bawang bombai.
+                    </p>
+                    
+                    <button>Selengkapnya..</button>
+                </div>
+                
+                <div class="content-image">
+                    <img src="assets/logo.png" alt="">
+                </div>
+            </div>
+        </article>
+
+        <article id="burger">
+            <div class="burger-text">
+                <h3 class="title">Jenis Burger</h3>
+                <p>
+                    Pecinta kuliner wajib tahu aneka jenis hamburger yang ada di dunia. 
+                    Yuk kita kulik sama-sama apa saja jenis burger yang banyak diminati
+                </p>
+            </div>
+            <div class="galeri-row">
+                <div class="galeri-col card">                    
+                    <img src="assets/burger1.jpg">
+                    <h4>Beef Burger</h4>
+                    <p>
+                        Beef burger biasanya diisi dengan lapisan daging, kemudian sayur-sayuran berupa selada, tomat dan bawang bombay
+                        dan juga dilengkapi aneka saus sesuai selera.
+                    </p>
+                </div>
+                <div class="galeri-col card">
+                    <img src="assets/burger2.jpg">
+                    <h4>Chicken Burger</h4>
+                    <p>
+                        Membuat chicken burger sangat gampang, daging ayam yang telah digoreng dengan tepung ditaruh di antara roti. 
+                    </p>
+                </div>
+                <div class="galeri-col card">
+                    <img src="assets/burger3.jpg">
+                    <h4>Fish Burger</h4>
+                    <p>
+                        Sesuai dengan namanya, daging yang berada di tengah roti adalah daging ikan lumat yang telah digoreng menggunakan tepung dan telur.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article id="history">
+            <div class="content">
+                <div class="content-desc">
+                    <h3 class="title">History</h3>
+                    <p>
+                        Sejarah Kemunculan Burger Burger pertama kali tercipta pada abad ke-1 masehi di Roma. 
+                        Sebuah hidangan berupa daging yang digiling dicampurkan dengan bumbu-bumbu seperti merica 
+                        dan perasa lainnya mulai dibuat. Pada saat itu, hidangan ini bernama Isicia Omentata. 
+                        Kemudian, pada abad ke-13 sebuah hidangan bernama Steak Tartare muncul di Mongolia.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <aside id="about">
+            <div class="burger-text">
+                <h3 class="title">About Me</h3>
+                 <p>
+                     Hi! My Name Rizky Novian from F-04, people call me Kiki. 
+                 </p>
+              </div>
+ 
+              <div class="content-image">
+                 <img src="assets/kiki.jpeg" alt="">
+              </div>
+        </aside>
+    </main>
+    <!-- Akhir Main -->
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h5>
+                This website for submission on Dicoding
+            </h5>
+        </div> 
+    </footer>
+    <!-- Akhir Footer -->
+    
+    <!-- Java Script -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul')
+
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>
